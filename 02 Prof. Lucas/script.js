@@ -34,9 +34,9 @@ function crearCards(cant, array) {
             <div class='card'>
                 <img src='https://imagenes.elpais.com/resizer/v2/4UPKL26K5ZICHFC6UIAU5DDHWU.jpg?auth=393fdef15d621d403eec4dc5bc104e8ce874f3be8958f4d708d2ca856b646922&width=1200'>
                 <h2 class='name'>${name}</h2>
-                <h3 class='codPos'>${codPos}</h3>
-                <h3 class='num'>${num}</h3>
-                <button class='btn-edit'>Editar</button>
+                <h3 class='codPos'>Código: ${codPos}</h3>
+                <h3 class='num'>Número: ${num}</h3>
+                <button class='btn-edit'>Editar nombre</button>
             </div>
         `;
     }
@@ -57,7 +57,7 @@ function cambiarNombre() {
 
     // Si se ingresó un nuevo nombre, se procede a actualizar la base de datos
     if (nuevoNombre) {
-        fetch("update.php", { // Permite realizar una petición HTTP desde JavaScript.
+        fetch("updateNombre.php", { // Permite realizar una petición HTTP desde JavaScript.
             method: "POST",
             headers: { // Los headers contienen información sobre la petición.
                 "Content-Type": "application/json"
