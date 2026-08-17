@@ -44,6 +44,13 @@ header{
     box-shadow: rgb(191, 191, 191) 5px 5px 25px;
     border-radius: 15px;
     border: 1px solid rgb(191, 191, 191);
+
+    scale: 1;
+    transition: scale 0.3s ease;
+}
+
+.card:hover{
+    scale: 1.1;
 }
 
 .card img{
@@ -55,5 +62,18 @@ header{
 }
 
 .card h2{
-    margin: 0 10px 20px 10px
+    margin: 0 10px 20px 10px;
+}
+
+.card button{
+    padding: 10px;
+    
+    background-color: rgb(180, 176, 173);
+    border: none;
+    border-radius: 10px;
+}
+
+.card button:hover{
+    background-color: rgb(194, 191, 188);
+    cursor: pointer;
 }
