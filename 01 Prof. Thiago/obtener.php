@@ -33,5 +33,4 @@ echo json_encode($registros);
 // Cierra la conexión con la base de datos para liberar recursos del servidor
 $conexion->close();
 ?>
-$conexion->close();
-?>
+
